@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=pageTitle%></title>
+    <%- include("../common/common.ejs")%>
+    <link rel="stylesheet" href="/css/shared.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="icon"><i class="fas fa-sign-in-alt"></i> Login</h1>
+      <form action="/api/v1/auth/login" method="post" class="form">
+        <div class="form__control">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="Enter email"
+            id="email" 
+            />
+        </div>
+        <div class="form__control">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="Enter password"                         />
+        </div>
+        <div class="form__control">
+          <button type="submit" class="btn btn-red">Login</button>
+        </div>
+      </form>
+      <span class="span">No Account?</span>
+      <span><a href="/api/v1/auth/register">
+      Register</span>
+      </a>
+    </div>
+  </body>
+</html>

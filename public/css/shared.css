@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  flex-basis: min(35rem, 90%);
+  padding: 1rem;
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 2.4rem 0;
+  border-radius: 4px;
+}
+.icon {
+  margin-bottom: 1.4rem;
+}
+.heading {
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+.btn {
+  display: block;
+  width: 100%;
+  font-size: inherit;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+.btn:last-child {
+  margin-top: 0.8rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-red {
+  background: #ff432e;
+}
+
+.btn-grey {
+  background: #888;
+}
+.form {
+  text-align: left;
+}
+.form label,
+.form input {
+  display: block;
+}
+.form label {
+  margin-bottom: 0.5rem;
+}
+.form input {
+  margin-bottom: 0.8rem;
+  outline: none;
+  font-size: inherit;
+  margin-left: 0.5%;
+  padding: 0.4rem;
+  font-weight: bold;
+}
+
+.form input[type="file"] {
+  border: 1px solid black;
+}
+.form input::file-selector-button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #ff432e;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 1px 1px black;
+  border-radius: 2px;
+  margin-right: 1rem;
+}
+.form input::file-selector-button:hover {
+  cursor: pointer;
+}
+.form input::placeholder {
+  color: #999;
+}
+.form input {
+  width: 100%;
+}
+.container span.span {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff432e;
+}
+
+.success {
+  background: greenyellow;
+  color: green;
+  border: 1px solid green;
+}
+.error {
+  background: rgba(255, 0, 0, 0.329);
+  color: red;
+  border: 1px solid red;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+.message {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+.message .message__content {
+  flex: 1;
+}
+.message .message__clear--icon:hover {
+  cursor: pointer;
+}
